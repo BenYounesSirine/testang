@@ -1,0 +1,14 @@
+<h1>{{p1}}</h1>
+<ul>
+    <img [src]="ll.couverture">
+    <li>{{ll.titre}}</li>
+    <li>Prix: {{ll.prix}}</li>
+    <li>Date Edition : {{ll.dateEdition|date:'MMMM - yyyy'}}</li>
+    <li>Donner un % de promotion: 
+        <input type="number" max=1 min=0.0/>
+    </li>
+</ul>
+
+<p>Donnez un prix maximum:
+    <input type="number" /><button (click)="fct()">Nombre des livres</button>{{nb}}
+</p>
